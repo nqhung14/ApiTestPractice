@@ -57,18 +57,6 @@ public class testMethod {
     }
 
 
-//    public static void getByURL(String URL, String headerOfParam, String valueOfParam, String headerKey, String valueOfHeader ) {
-//        String baseURL = URL+"?"+headerOfParam+"="+valueOfParam;
-//        RestAssured.baseURI = baseURL;
-//
-//        Header myHeader = new Header(headerKey, valueOfHeader);
-//
-//        Response response = RestAssured.given()
-//                .header(myHeader)
-//                .then()
-//                .extract().response();
-//    }
-
     public static void sendGetApi(String url, List<Header> headers, List<Map<String, String>> params) {
         //deviceUi=....
         //actionUid=....
