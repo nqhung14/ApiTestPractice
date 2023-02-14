@@ -72,6 +72,18 @@ public class testMethod {
                 .extract().response();
 
         System.out.println(response.getBody().asString());
+    }
 
+    public static void getAPI1(String baseURI, Map<String, String> headers) {
+        RestAssured.baseURI = baseURI;
+        List<Map<String, String>> listHeader = new ArrayList<Map<String, String>>();
+        listHeader.add(headers);
+        Response response = RestAssured.given()
+                .headers(headers)
+                .get()
+                .then()
+                .extract().response();
+
+        System.out.println(response.getBody().asString());
     }
 }

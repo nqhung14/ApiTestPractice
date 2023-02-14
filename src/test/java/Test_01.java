@@ -35,7 +35,12 @@ public class Test_01 {
 
     @Test
     public static void test01(){
+
         testMethod.getAPI(URL, headers);
+    }
+    @Test
+    public static void test02(){
+        testMethod.getAPI1(URL, headers);
     }
 }
 
